@@ -1,0 +1,33 @@
+.text {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+
+    /* border: 5px solid magenta; */
+    margin: 1.5em;
+    padding: 2em;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row > div {
+    -webkit-text-stroke: 1px gray;
+    animation: bounce 0.5s ease-in-out alternate infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
+  @keyframes bounce {
+    to{
+      transform: translateY(4rem);
+      /* transform: translateX(4rem); */
+    }
+  }
